@@ -1,0 +1,465 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppila' sans-serif;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+a{
+	text-decoration: none;
+}
+/*header*/
+header{
+	background: #eee;
+}
+/*nav*/
+nav{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 50px;
+}
+/*ul*/
+nav ul{
+	margin-right: 20px;
+}
+/*li*/
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px;
+	font-family: monospace;
+}
+/*nav a*/
+nav ul li a{
+	font-size: 17px;
+	color: #000;
+	font-weight: 500;
+	transition: .5s;
+}
+/*hover*/
+nav ul li a:hover{
+	color: gold;
+}
+
+/*home*/
+.home{
+	background: #eee;
+	height: 100vh;
+}
+.home .row .content{
+	margin-top: 50px;
+}
+.home .row .content h1{
+	font-size: 35px;
+	font-family: sans-serif;
+}
+.home .row .content h2{
+	margin-top: 20px;
+	font-size: 70px;
+	font-family: sans-serif;
+}
+.home .row .content h5{
+	font-weight: normal;
+	font-size: 14px;
+	font-family: monospace;
+	padding: 29px 0;
+}
+.home .row .content p{
+	width: 80%;
+	font-size: 14px;
+	margin-top: 10px;
+	font-family: monospace;
+	text-align: left;
+}
+
+/*img*/
+.home .row .img{
+	width: 100%;
+	height: 80vh;
+}
+.home .row .img img{
+	width: 100%;
+	height: 83vh;
+}
+
+/*------------------fashion----------------*/
+/*fashion*/
+.fashion .container{
+	width: 80%;
+	margin-top: 30px;
+}
+.fashion .row .img{
+	position: relative;
+}
+.fashion .row span{
+	position: absolute;
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	padding: 13px 25px;
+	text-align: center;
+}
+
+.fashion .row span i{
+	font-size: 30px;
+	font-family: monospace;
+	font-weight: 600;
+}
+
+/*content*/
+.fashion .row .content{
+	margin-top: 20px;
+}
+.fashion .row .content h1{
+	padding: 15px 0;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+.fashion .row .content h6{
+	font-family: monospace;
+	font-size: 14px;
+}
+.fashion .row .content h6 i{
+	font-family: monospace;
+	font-size: 14px;
+	transition: .5s;
+}
+.fashion .row .content h6 i:hover{
+	color: gold;
+}
+.fashion .row .content p{
+	width: 137%;
+	font-size: 14px;
+	padding: 20px 0;
+	font-family: monospace;
+}
+.fashion .row .content a{
+	color: #000;
+	padding: 25px 0;
+	transition: .5s;
+}
+.fashion .row .content a:hover{
+	color: gold;
+}
+
+/*hr*/
+.fashion .row hr{
+	margin-top: 20px;
+	width: 150%;
+	font-weight: 300;
+}
+
+/*-----------------food-----------------*/
+.food .container{
+	width: 80%;
+}
+
+.food .row{
+	margin-top: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.food .row .img{
+	position: relative;
+	width: 90%;
+	padding: 10px 10px;
+}
+.food .row .img img{
+	width: 120%;
+}
+.food .row .img span{
+	position: absolute;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+}
+.food .row .content{
+	width: 100%;
+	padding: 10px 10px;
+}
+.food .row .content h1{
+	font-family: monospace;
+	font-size: 24px;
+	font-weight: normal;
+}
+.food .row .content h6{
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 0;
+}
+.food .row .content h6 i{
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 0;
+	transition: .4s;
+}
+.food .row .content h6 i:hover{
+	color: gold;
+}
+.food .row .content p{
+	font-size: 14px;
+	padding: 10px 0;
+	font-family: monospace;
+}
+.food .row .content a{
+	color: #000;
+	margin-top: 10px;
+	transition: .5s;
+}
+.food .row .content a:hover{
+	color: gold;
+}
+.food .row hr{
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 300;
+}
+/*Contact*/
+.contact .container{
+	width: 80%;
+}
+
+.contact .row{
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.contact .row .img{
+	position: relative;
+	width: 90%;
+	padding: 10px 10px;
+}
+.contact .row .img img{
+	width: 120%;
+}
+.contact .row .img span{
+	position: absolute;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+}
+.contact .row .content{
+	width: 100%;
+	padding: 10px 10px;
+}
+.contact .row .content h1{
+	font-family: monospace;
+	font-size: 24px;
+	font-weight: normal;
+}
+.contact .row .content h6{
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 0;
+}
+.contact .row .content h6 i{
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 0;
+	transition: .4s;
+}
+.contact .row .content h6 i:hover{
+	color: gold;
+}
+.contact .row .content p{
+	font-size: 14px;
+	padding: 10px 0;
+	font-family: monospace;
+}
+.contact .row .content a{
+	color: #000;
+	margin-top: 10px;
+	transition: .5s;
+}
+.contact .row .content a:hover{
+	color: gold;
+}
+.contact .row hr{
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 300;
+}
+/*Lifestyle*/
+.lifestyle .container{
+	width: 80%;
+}
+
+.lifestyle .row{
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lifestyle .row .img{
+	position: relative;
+	width: 90%;
+	padding: 10px 10px;
+}
+.lifestyle .row .img img{
+	width: 120%;
+}
+.lifestyle .row .img span{
+	position: absolute;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+}
+.lifestyle .row .content{
+	width: 100%;
+	padding: 10px 10px;
+}
+.lifestyle .row .content h1{
+	font-family: monospace;
+	font-size: 24px;
+	font-weight: normal;
+}
+.lifestyle .row .content h6{
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 0;
+}
+.lifestyle .row .content h6 i{
+	font-family: monospace;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 0;
+	transition: .4s;
+}
+.lifestyle .row .content h6 i:hover{
+	color: gold;
+}
+.lifestyle .row .content p{
+	font-size: 14px;
+	padding: 10px 0;
+	font-family: monospace;
+}
+.lifestyle .row .content a{
+	color: #000;
+	margin-top: 10px;
+	transition: .5s;
+}
+.lifestyle .row .content a:hover{
+	color: gold;
+}
+.lifestyle .row hr{
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 300;
+}
+
+/*piveyas*/
+.piveyas .row{
+	width: 100%;
+	height: 30vh;
+}
+.piveyas .row .content{
+	float: right;
+	margin-top: 30px;
+}
+.piveyas .row .content a.active{
+	background: #000;
+	color: #fff;
+}
+.piveyas .row .content a{
+	padding: 10px 15px;
+	border: 2px solid #000;
+	color: #000;
+	font-size: 17px;
+	font-weight: 700;
+	transition: .5s;
+}
+.piveyas .row .content a:hover{
+	background: #000;
+	color: #fff;
+}
+.piveyas .row .next{
+	float: right;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.piveyas .row .next a i{
+	margin: 2px 0;
+}
+.piveyas .row .next a{
+	padding: 8px 26px;
+	border: 2px solid #000;
+	color: #000;
+	font-size: 17px;
+	font-weight: 700;
+	transition: .5s;
+}
+.piveyas .row .next a:hover{
+	background: #000;
+	color: #fff;
+}
+
+.row .contactus{
+	margin-top: 60px;
+	text-align: center;
+}
+.row .contactus p{
+	width: 70%;
+	margin: auto;
+	font-family: monospace;
+	font-size: 16px;
+}
+.row .contactus a{
+	color: rgba(0, 0, 0, 1.0);
+	background: rgba(65, 165, 250, 1);
+	margin-top: 50px;
+	font-size: 14px;
+	padding: 13px 26px;
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;
+	border-radius: 2px;
+	transition: .7s;
+}
+.row .contactus a:hover{
+	font-weight: 600;
+	text-shadow: -7px -40px rgba(0, 0, 0, 1), 10px 40px rgba(250, 0, 0, 1.0);
+	color: rgba(0, 0, 0, .1);
+	background: #f90;
+}
+
+.row .contactus h5{
+	width: 80%;
+	margin: auto;
+	padding-top: 40px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 30px;
+}
